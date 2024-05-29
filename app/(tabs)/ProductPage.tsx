@@ -1,7 +1,7 @@
-import { Button, StyleSheet, Text, View } from "react-native";
+import { Button, SafeAreaView, StyleSheet, Text, View } from "react-native";
 import React, { useState } from "react";
-
-import { Image } from "react-native"; // Import the Image component
+import { Image } from "react-native";
+import Flatlistexample from "./flatlist"; // Import the Flatlistexample component
 
 const Custom_text = () => {
     const [productImage, setProductImage] = useState(
@@ -26,6 +26,9 @@ const Custom_text = () => {
                 Monke is a cool dude. He enjoys staring into your soul.
             </Text>
             <Button title="this is a button" onPress={changeImage} />
+            <SafeAreaView>
+                <Flatlistexample />
+            </SafeAreaView>
         </View>
     );
 };
