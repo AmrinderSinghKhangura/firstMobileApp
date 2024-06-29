@@ -61,6 +61,7 @@ const Item = ({ title, image }: { title: string; image: string }) => {
       </View>
     </View>
   );
+
 };
 
 const Flatlistexample = () => {
